@@ -1,0 +1,27 @@
+{
+  "name": "reddit-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for browsing Reddit through the Arctic Shift archive",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "reddit-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.0"
+  }
+}
